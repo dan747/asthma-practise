@@ -1,0 +1,62 @@
+</DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Imara Care Global - Register</title>
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body>
+        <form>
+            <legend>
+                Sign up/ Login to Imara Care Global 
+            </legend>
+            <label for="FullName">Full Name:</label>
+            
+             <input type="text" placeholder="Enter your fullname" required id="FullName">
+             <br>
+             <br>
+             <label for="Email">Email:</label>
+             <input type ="email" placeholder="e.g abc@gmail.com" required id="Email" required>
+                <br>
+                <br>
+                <label for="password">Password:</label>
+            <input type = "password" placeholder="Enter your password" required id="password" required>
+            <br>
+            <br>
+            <label for ="confirmPassword">Confirm Password</label>
+            <input type="password" placeholder="Re-enter your password" required id="confirmPassword" required>
+            <br>
+            <br>
+            <label for="category">Select category:</label>
+            <select name="category" id="category">
+                <option value="">Patient</option>
+                <option value="">School</option>
+                <option value="">Clinic</option>
+                <option value="">Family</option>
+                <option value="">Elderly</option>
+                <option value="">Pharmacies</option>
+                <option value="">Corporate</option>
+                </select>
+            
+            </select>
+            <br>
+            <br>
+            <label for="Nationality">Select Nationality For Patient:</label>
+            <select name="nationality" id="nationality">
+                <option value="">German</option>
+                <option value="">Kenyan</option>
+                <option value="">British</option>
+            </select>
+        <p class="Terms">Signing up means you agree to our <a href="Terms and Conditions.html">Terms and Conditions</a></p>
+        <input type="radio" id="tnc" name="tnc" required>
+        <label for="tnc"> I agree to the terms and Conditions</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe"> Subscribe to our newsletter</label>
+        <br>
+        <br>
+        <p class="login-link"> <button onclick="register()" class="btn-primary">Register</button> 
+        <br><br>Already have an account? <a class="btn-link"href="login.html">Login</a></p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+body{margin:0;
+overflow: hidden;}
+main {
+  padding-top: 60px; /* same height as navbar */
+}
+.bottom{
+        position:fixed;
+        bottom:0;
+        width:100%;
+      background-color: #012501;
+      color: #faf8f8;
+      text-align: center;
+    }
+.bottom.a{ 
+  color: white;
+  
+}
+.nurse-image{
+  width: 500px;
+  height: 480px;
+  border-radius: 25px;
+  object-fit: cover;
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  z-index: 1;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: all 0.4s ease;
+  border: 3px solid rgba(255,255,255, 0.6);
+  filter: brightness(0.95) contrast(1.05);
+  display: flex;
+ align-items: center;
+ margin-left: auto;
+ margin-right: auto;
+
+}
+.nurse-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+  filter: brightness(1) contrast(1.1);
+}
+.welcome-text{
+font-size: 20px;
+width: 700px;
+
+
+margin-left: 50px;
+margin-top: 50px;
+max-width: 900px;
+border-radius: 20px;
+font-family: 'Poppins', sans-serif;
+line-height: 1.8;
+}
+.highlight-head{
+  font-size: 20px;
+  font-weight: bold;
+  color: #012501;
+}
+.highlight-head1{
+  font-size: 18px;
+  font-weight: bold;
+  color: #012501;
+}
+.highlight-head2{
+    font-size:18px;
+    font-weight: bold;
+    color:hsl(222, 98%, 21%);
+    
+} .welcome-text{
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.intro-image img{
+    width: 430px;
+  height: 500px;
+  border-radius: 25px;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s ease;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: hsl(222, 98%, 21%);
+  position:fixed;
+  top:0%;
+  width:100%;
+  z-index:1000;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+ ul li a{
+    display: block;
+   text-align: right;
+    padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+   
+}
+ul li {
+  float: left;
+
+}
+ul li a:hover:not(.active) {
+  background-color: #012501;
+}
+
+ul li a.active {
+  background-color: #04AA6D;
+}
